@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Office Survey Form</title>
+</head>
+<body>
+    <p class="themeSong">Enable browser audio for theme song</p>
+        <h1 id="title">It is a survey</h1>
+        <p id="description">Fill it out now!</p>
+        <form action="" id="survey-form">
+            <fieldset>
+                <label for="firstName" id="name-label">First Name</label><input type="text" id="name" name="firstName" required placeholder="Enter your first name">
+                <label for="lastName" id="name-label">Last Name</label><input type="text" id="name" name="lastName" required placeholder="Enter your last name">
+                <label for="age" id="number-label">Age(optional)</label><input type="number" id="number" name="age" min="5" max="120" placeholder="Enter your age">
+                <label for="email" id="email-label">Email Addy</label> <input type="email" id="email" name="email" required placeholder="Enter your email addy">
+            </fieldset>
+            <fieldset>
+                <p>Have you ever seen The Office?</p>
+                <label><input type="radio" name="office-seen" value="ofCourse"> Of Course!</label>
+                <label><input type="radio" name="office-seen" value="nah"> Nah</label>
+                <label><input type="radio" name="office-seen" value="yesHate"> Yes, but I hate it</label>
+            
+                <p>Where did you first hear about The Office?</p>
+                <select name="first-heard" id="dropdown">
+                    <option>(select one)</option>
+                    <option value="1">A Friend</option>
+                    <option value="2">Social Media</option>
+                    <option value="3">My Boo</option>
+                    <option value="4">TV</option>
+                    <option value="5">What's The Office?</option>
+                    <option value="6">Other</option>
+                </select>
+            </fieldset>
+            <fieldset class="row">
+                <p>Who are your favorite characters?<span>(Check all that apply)</span></p>
+                <span class="col"><label><input type="checkbox" value="Michael Scott"> Michael Scott</label>
+                <label><input type="checkbox" value="Dwight Schrute"> Dwight Schrute</label>
+                <label><input type="checkbox" value="Jim Halpert"> Jim Halpert</label>
+                <label><input type="checkbox" value="Pam Beesly"> Pam Beesly</label>
+                <label><input type="checkbox" value="Ryan Howard"> Ryan Howard</label>
+                <label><input type="checkbox" value="Stanley Hudson"> Stanley Hudson</label>
+                <label><input type="checkbox" value="Kevin Malone"> Kevin Malone</label>
+                <label><input type="checkbox" value="Meredith Palmer"> Meredith Palmer</label>
+                <label><input type="checkbox" value="Angela Martin"> Angela Martin</label>
+                <label><input type="checkbox" value="Oscar Martinez"> Oscar Martinez</label>
+                <label><input type="checkbox" value="Phyllis Vance"> Phyllis Vance</label>
+                <label><input type="checkbox" value="Roy Anderson"> Roy Anderson</label></span>
+                <span class="col"><label><input type="checkbox" value="Jan Levinson"> Jan Levinson</label>
+                <label><input type="checkbox" value="Toby Flenderson"> Toby Flenderson</label>
+                <label><input type="checkbox" value="Kelly Kapoor"> Kelly Kapoor</label>
+                <label><input type="checkbox" value="Andy Benard"> Andy Benard</label>
+                <label><input type="checkbox" value="Creed Bratton"> Creed Bratton</label>
+                <label><input type="checkbox" value="Darryl Philbin"> Darryl Philbin</label>
+                <label><input type="checkbox" value="Erin Hannon"> Erin Hannon</label>
+                <label><input type="checkbox" value="Holly Flax"> Holly Flax</label>
+                <label><input type="checkbox" value="Robert California"> Robert California</label>
+                <label><input type="checkbox" value="Nellie Bertram"> Nellie Bertram</label>
+                <label><input type="checkbox" value="What the hell"> What the hell is a "Dwight Schrute"</label></span>
+            </fieldset>
+            <fieldset>
+                <label for="quote">What's your favorite quote?</label>
+                <textarea name="quote" rows="3" cols="30" placeholder="Jan: And, you're hardly my first..."></textarea>
+                <label for="comment">Addition Comments:</label>
+                <textarea name="comment" rows="3" cols="20" placeholder="Enter your comment here..."></textarea>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+        </form>
+        <audio autoplay loop>
+            <source src="theOffice.mp3" type="audio/mp3" />
+          </audio>
+    </body>
+</html>
